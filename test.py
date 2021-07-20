@@ -1,3 +1,4 @@
+"作业题"
 # import random
 # def guessing_game():
 #     guess = input("You can choose from numpy,seaborn,pandas,pantab,spacy,requests,tensorflow:")
@@ -35,14 +36,15 @@ jokes = [{'type': 'success', 'value': {'categories': ['plain'], 'id': 100, 'joke
          {'type': 'success', 'value': {'categories': ['nerdy'], 'id': 480, 'joke': 'The class object inherits from Chuck Norris'}},
          {'type': 'success', 'value': {'categories': ['nerdy'], 'id': 490, 'joke': "Chuck Norris doesn't need to use AJAX because pages are too afraid to postback anyways."}}]
 #aList = []
-fList=[]
-for index in range(len(jokes)): #0-4
-    a = jokes[index]['value']['joke']
-    a= a.replace(".","").replace('!','').replace(',','').lower().split()
-    fList.extend(a)
-#print(fList)
-result={word:fList.count(word) for word in set(fList)}
-print(result)
+
+# fList=[]
+# for index in range(len(jokes)): #0-4
+#     a = jokes[index]['value']['joke']
+#     a= a.replace(".","").replace('!','').replace(',','').lower().split()
+#     fList.extend(a)
+# #print(fList)
+# result={word:fList.count(word) for word in set(fList)}
+# print(result)
     #print(a)
     #aList.append(jokes[index]['value']['jokes'])
 
@@ -76,3 +78,32 @@ print(result)
 # print(type(a))
 # result={word:sentence.split().count(word) for word in set(sentence.split())}
 # print(result)
+"作业题结束"
+
+"""
+使用input()函数获取键盘输入(字符串)
+使用int()函数将输入的字符串转换成整数
+使用print()函数输出带占位符的字符串
+
+练习1
+将华氏温度转换为摄氏温度
+"""
+# f = float(input('请输入华氏温度: '))
+# c = (f - 32) / 1.8
+# print('%.2f华氏度 = %.1f摄氏度' % (f, c))
+
+"""
+练习2
+输入圆的半径计算计算周长和面积
+"""
+# rad = float(input('请输入半径: '))
+# zc = 2*3.1415*rad
+# mj = 3.1315*rad*rad
+# print('周长是%.2f米 , 面积是%.2f平方米' % (zc, mj))
+
+"""
+练习3
+输入年份 如果是闰年输出True 否则输出False
+"""
+# year = int(input('请输入年份: '))
+# print(year%4 == 0 or year%400 == 0 )
