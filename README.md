@@ -7,3 +7,4 @@ I will play around with some questions about python.
 
 
 keep update every day!
+Keep fighting
